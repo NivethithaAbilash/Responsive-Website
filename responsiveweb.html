@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="responsiveweb.css">
+    
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="navbar-header" style="font-size: 26px">INANCE</a>
+    <button class='navbar-btn'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class='navbar-item hide'>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+<script>
+  
+  function toggleNavbar() {
+      const navbarItems = document.querySelector(".navbar-items");
+      navbarItems.classList.toggle("show");
+  }
+
+  
+  function handleResize() {
+      const navbarItems = document.querySelector(".navbar-items");
+      const navbarBtn = document.querySelector(".navbar-btn");
+
+      if (window.innerWidth > 768) {
+          navbarItems.classList.remove("hide", "show"); 
+          navbarBtn.style.display = "none"; 
+      } else {
+          navbarItems.classList.add("hide"); 
+          navbarBtn.style.display = "flex"; 
+      }
+  }
+  window.onload = handleResize;
+  window.onresize = handleResize;
+  document.querySelector(".navbar-btn").onclick = toggleNavbar;
+</script>
+<div class="back">
+ <div class="whole2"> 
+<div class="content">
+   <h2 style="font-size: 50px;"> Repair and<br>
+        Maintenance 
+        Services</h2>
+        <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Repudiandae velit cupiditate nesciunt ipsam  nihil sed quo expedita sint, 
+ voluptatum impedit vel eius id. Aut magni quam quis expedita qui!vhgbfhgftrhytnh</p>
+
+<button style="font-size: 20px;" class="button1" >CONTACT US</button>
+</div>
+
+<div class="main-image">
+  
+    <img src="../a1.png" alt="man"> 
+</div>
+
+</div>
+     </div>
+ 
+<div  class="mainbox">
+<div class="box">   
+    <i  style="font-size:25px; margin: auto; color: white;" class="bi bi-pen"></i>
+    <h2 style="color: white;"> REPAIR</h2> </div>
+<div class="box">  
+    <i style="font-size:25px; margin: auto; color: white;" class="bi bi-house-heart-fill"></i>
+          <h2 style="color: white;">IMPROVE</h2>
+</div>
+<div class="box">
+    <i style="font-size:25px; margin: auto; color: white;" class="bi bi-house-door-fill"></i>
+          <h2 style="color: white;">MAINTAIN</h2>
+</div>
+</div>
+<!-- </div> -->
+
+<div class="page2">
+   <div class="cont2"> 
+   <bold> <h2> ABOUT US </h2></bold>
+   <p>There are many variations of
+    passages
+    of Lorem Ipsum but the have suffered alteration in some form,
+    by injected humour, randomise are many variations of passages of Lorem Ipsum available, but the
+    majority have suffered alteration in some form, by injected humour.. </p>
+  <button class="button2">READ MORE</button>   
+    </div>
+    <div class="img2">
+        <img src="../man2.jpeg" alt="man" style="border-radius: 4px;">
+    </div>
+    </div>
+    <!-- --------------------------------- --> 
+    <div class="half-screen">
+      <div class="sit" >
+        <img   src="../man3.png" alt="man"></div>
+           <div class="content1">
+          <h2>
+            WE PROVIDE PORFESSIONAL
+            HOME SERVICES</h2>
+          <p style="font-size:17px;">randomised words which don't look even slightly believable.
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there any thing embarrassing
+            hidden in the middle of text.
+            All randomised words which don't look even slightly</p>
+          <button class="button button1"> READ MORE</button>
+        </div>
+
+      </div>
+
+     <div class="page4">
+              <h2>OUR SERVICES</h2>
+              <div class="mainboxs">
+              <div class="box">
+                <h3> maintanence </h3>
+                <p style="font-size: small;"> when looking at its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal</p>
+              </div>
+              <div class="box">
+                <h3>Electrical</h3>
+                <p style="font-size: small;">when looking at its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal</p>
+              </div>
+              <div class="box">
+                <h3> Plumbing</h3>
+                <p style="font-size: small;"> when looking at its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal </p>
+                 </div>
+                 
+              </div>
+              <div style="align-items: center; margin-left: 45%;">
+                <button class="but2">VIEW MORE</button>
+                 </div>
+             </div>
+
+            
+             <div class="header">
+  
+  <h2> WHAT OUR CLIENT SAYS </h2>
+  </div>
+  <div class="cards">
+    <div class="indivial">
+<div class="card1">
+  <img style="border-radius: 50%;" src="../client1.jpeg" alt="client">
+<div class="stars">
+  <h3>jorch morik</h3>
+  <p style="display:flex; gap: 4px; color: rgb(238, 212, 8);">
+   <i class="bi bi-star-fill"></i>
+   <i class="bi bi-star-fill"></i>
+   <i class="bi bi-star-fill"></i>
+   <i class="bi bi-star-fill"></i>
+   <i class="bi bi-star-fill"></i>
+  </p>
+</div>
+<div class="icons">
+  <i class="bi bi-quote"></i>
+</div>
+</div>
+<p> chunks as necessary, making this the first true generator on the Internet.
+  It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+  generate Lorem Ipsum</p>
+</div>
+
+
+<div class="indivial2">
+  <div class="card2">
+    <img style="border-radius: 50%;" src="../client2.jpeg" alt="client">
+  <div class="stars">
+    <h3>jorch morik</h3>
+    <p style="display:flex; gap: 4px; color: rgb(238, 212, 8);">
+     <i class="bi bi-star-fill"></i>
+     <i class="bi bi-star-fill"></i>
+     <i class="bi bi-star-fill"></i>
+     <i class="bi bi-star-fill"></i>
+     <i class="bi bi-star-fill"></i>
+    </p>
+  </div>
+  <div class="icons">
+    <i class="bi bi-quote"></i>
+  </div>
+  </div>
+  <p> chunks as necessary, making this the first true generator on the Internet.
+    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+    generate Lorem Ipsum</p>
+  </div>
+</div>
+<div class="arrow">
+  <p  > <i style=" color: white; font-size: x-large; " class="bi bi-arrow-left"></i></p>
+  <p1 > <i style=" color: white; font-size: x-large; " class="bi bi-arrow-right"></i></p1>
+  </div>
+   
+    <div class="details">
+      <div class="form1">
+        <bold class="form">
+          <h2> CONTACT US</h2>
+          <input type="text" id="name" placeholder="Name" name="Name" style="max-width: 60%; height: 23%;">
+          <input type="email" id="Email" placeholder="Email" name="Email" style="max-width: 70%; height: 23%;">
+          <input type="tel" id="number" placeholder="Phone number" name="phone number" style="max-width: 60%; height: 23%;">
+ <bold>         <textarea style="box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2); border: 2px solid grey;" id="Message" name="Message" rows="6" cols="35" placeholder="Message"></textarea></bold>
+          <button class="but3">SEND</button>
+        </form>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509879!2d144.9556510156239!3d-37.817209442014295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1fdd1fd%3A0x7b8a689e6c4ef253!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1602635561758!5m2!1sen!2sau"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+    </div>
+   
+    <div class="footer">
+      <div class="foot">
+        <div class="overall" style="position: relative;">
+<h2> GET IN  TOUCH</h2>
+<div class="dots" >
+
+  <div class="dot1" style="text-align: center;">
+    <button><i
+         style="font-size: 25px; margin:auto; color:white;" class="bi bi-geo-alt-fill"></i></button>
+     <p style="margin-left: -27px;"> dummy  content </p>
+   </div>
+
+   <div   class="dot2" style="text-align: center;">
+
+                <button><i
+                    style="font-size: 25px; margin: auto; color:white;" class="bi bi-telephone-fill"></i></button>
+                <p style="position: absolute; z-index: 3;"> 9976744428 </p>
+              </div>
+ <div  class="dot3" style="text-align: center; "> <button><i
+                    style="font-size: 25px; margin: auto; color:white;" class="bi bi-envelope-open-fill"></i></button>
+                <p style=" margin-right:-57px;"> domain@gmail.com</p>
+              </div>
+               <p class="line">
+            </p> 
+           
+            
+            </div>
+
+<div class="follow" >
+<H2> FOLLOW US</H2>
+</div>
+
+<div class=" emoji">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-youtube"></i>
+  <i class="bi bi-instagram"></i>
+
+</div>
+</div>
+</div>
+<hr>
+<p style="text-align: center;">@ 2024 All Rights Reserved. By HTML Design</p>
+    </div>
+
+    <script>
+      document.querySelector(".navbar-btn").onclick=function(){
+         document.querySelector(".navbar-item").classList.toggle("hide");
+      }
+    </script>
+ </body>
+</html>
