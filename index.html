@@ -36,17 +36,23 @@
 
   
   function handleResize() {
-      const navbarItems = document.querySelector(".navbar-items");
-      const navbarBtn = document.querySelector(".navbar-btn");
+    const navbarItems = document.querySelector(".navbar-items");
+    const navbarBtn = document.querySelector(".navbar-btn");
 
-      if (window.innerWidth > 768) {
-          navbarItems.classList.remove("hide", "show"); 
-          navbarBtn.style.display = "none"; 
-      } else {
-          navbarItems.classList.add("hide"); 
-          navbarBtn.style.display = "flex"; 
-      }
-  }
+    if (!navbarItems || !navbarBtn) return; 
+
+    if (window.innerWidth > 768) {
+        navbarItems.classList.remove("hide", "show"); 
+        navbarBtn.style.display = "none"; 
+    } else {
+        navbarItems.classList.add("hide"); 
+        navbarBtn.style.display = "flex"; 
+    }
+}
+
+window.addEventListener("resize", handleResize);
+handleResize(); // Run once on page load
+
   window.onload = handleResize;
   window.onresize = handleResize;
   document.querySelector(".navbar-btn").onclick = toggleNavbar;
