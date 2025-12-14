@@ -16,7 +16,7 @@ This is a responsive website for a **Repair and Maintenance Service**. It includ
 - **CSS3** for styling.
 - **Bootstrap Icons** for icons.
 
-## check out our website at...
+## check out the website at...
 https://nivethithaabilash.github.io/Responsive-Website/
 
 
